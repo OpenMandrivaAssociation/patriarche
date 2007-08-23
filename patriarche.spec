@@ -11,10 +11,11 @@ License: GPL
 Epoch: 1
 url: http://perso.wanadoo.fr/warly/files/patriarche
 Source: %name-%version.tar.bz2
+Patch: patriarche-0.2.8-use-gimp24.patch
 Group: Books/Literature
 BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildArch: noarch
-BuildRequires: libxslt-proc tetex gimp >= 1:2.3.0 gimp < 1:2.4.0 tetex-dvipdfm tetex-latex
+BuildRequires: libxslt-proc tetex gimp >= 1:2.4.0 gimp < 1:2.5.0 tetex-dvipdfm tetex-latex
 
 %description
 Le Patriarche postscript versions
@@ -92,6 +93,7 @@ Tools needed to construct patriarche-like book.
 
 %prep
 %setup -q
+%patch -p0
 
 %build
 
