@@ -1,6 +1,6 @@
 %define name patriarche
 %define version 0.2.8
-%define release %mkrel 4
+%define release %mkrel 5
 %define bookname Le Patriarche
 
 Summary: The true story of Ylraw
@@ -106,41 +106,6 @@ make install PREFIX=$RPM_BUILD_ROOT
 install -d -m 755 $RPM_BUILD_ROOT%{_menudir}
 install -d -m 755 $RPM_BUILD_ROOT%{_datadir}/applications
 
-cat >$RPM_BUILD_ROOT%{_menudir}/%{name}-ps <<EOF
-?package(%{name}):\
-command="gv %{_datadir}/%name/A4-patriarche-1.1.ps"\
-title="%{bookname} Tome 1 postscript"\
-longtitle="%{bookname} Tome 1 Le Premier Monde - À la recherche d'un Dieu"\
-needs="x11"\
-section="Documentation/%name"\
-icon="documentation_section.png" \
-xdg="true"
-?package(%{name}):\
-command="gv %{_datadir}/%name/A4-patriarche-1.2.ps"\
-title="%{bookname} Tome 2 postscript"\
-longtitle="%{bookname} Tome 2 Le Premier Monde - Le Bien"\
-needs="x11"\
-section="Documentation/%name"\
-icon="documentation_section.png" \
-xdg="true"
-?package(%{name}):\
-command="gv %{_datadir}/%name/A4-patriarche-1.3.ps"\
-title="%{bookname} Tome 3 postscript"\
-longtitle="%{bookname} Tome 3 Le Premier Monde : Crise"\
-needs="x11"\
-section="Documentation/%name"\
-icon="documentation_section.png"\
-xdg="true"
-?package(%{name}):\
-command="gv %{_datadir}/%name/A4-patriarche-1.3.ps"\
-title="%{bookname} Tome 4 postscript"\
-longtitle="%{bookname} Tome 4 Le Deuxième Monde : Ménocha"\
-needs="x11"\
-section="Documentation/%name"\
-icon="documentation_section.png"\
-xdg="true"
-EOF
-
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-ps-1.desktop << EOF
 [Desktop Entry]
 Name="%{bookname} Tome 1 postscript
@@ -187,41 +152,6 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=X-MandrivaLinux-MoreApplications-Documentation;
-EOF
-
-cat >$RPM_BUILD_ROOT%{_menudir}/%{name}-pdf <<EOF
-?package(%{name}):\
-command="xpdf %{_datadir}/%name/A4-patriarche-1.1.pdf"\
-title="%{bookname} Tome 1 PDF"\
-longtitle="%{bookname} Tome 1 Le Premier Monde - À la recherche d'un Dieu"\
-needs="x11"\
-section="Documentation/%name"\
-icon="documentation_section.png"\
-xdg="true"
-?package(%{name}):\
-command="gv %{_datadir}/%name/A4-patriarche-1.2.pdf"\
-title="%{bookname} Tome 2 PDF"\
-longtitle="%{bookname} Tome 2 Le Premier Monde - Le Bien"\
-needs="x11"\
-section="Documentation/%name"\
-icon="documentation_section.png"\
-xdg="true"
-?package(%{name}):\
-command="gv %{_datadir}/%name/A4-patriarche-1.3.pdf"\
-title="%{bookname} Tome 3 PDF"\
-longtitle="%{bookname} Tome 3 Le Premier Monde : Crise"\
-needs="x11"\
-section="Documentation/%name"\
-icon="documentation_section.png"\
-xdg="true"
-?package(%{name}):\
-command="gv %{_datadir}/%name/A4-patriarche-2.1.pdf"\
-title="%{bookname} Tome 4 PDF"\
-longtitle="%{bookname} Tome 4 Le Deuxième Monde : Ménocha"\
-needs="x11"\
-section="Documentation/%name"\
-icon="documentation_section.png"\
-xdg="true"
 EOF
 
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-pdf-1.desktop << EOF
@@ -272,41 +202,6 @@ StartupNotify=true
 Categories=X-MandrivaLinux-MoreApplications-Documentation;
 EOF
 
-cat >$RPM_BUILD_ROOT%{_menudir}/%{name}-html <<EOF
-?package(%{name}):\
-command="$BROWSER %{_datadir}/%name/index.html"\
-title="%{bookname}"\
-longtitle="%{bookname}, Le livre d'Ylraw"\
-needs="x11"\
-section="Documentation/%name"\
-icon="documentation_section.png"\
-xdg="true"
-?package(%{name}):\
-command="$BROWSER %{_datadir}/%name/html-1.1/index.html"\
-title="%{bookname} Tome 1 HTML"\
-longtitle="%{bookname} Tome 1 Le Premier Monde - À la recherche d'un Dieu"\
-needs="x11"\
-section="Documentation/%name"\
-icon="documentation_section.png"\
-xdg="true"
-?package(%{name}):\
-command="$BROWSER %{_datadir}/%name/html-1.2/index.html"\
-title="%{bookname} Tome 2 HTML"\
-longtitle="%{bookname} Tome 2 Le Premier Monde - Le Bien"\
-needs="x11"\
-section="Documentation/%name"\
-icon="documentation_section.png"\
-xdg="true"
-?package(%{name}):\
-command="$BROWSER %{_datadir}/%name/html-1.3/index.html"\
-title="%{bookname} Tome 3 HTML"\
-longtitle="%{bookname} Tome 3 Le Premier Monde : Crise"\
-needs="x11"\
-section="Documentation/%name"\
-icon="documentation_section.png"\
-xdg="true"
-EOF
-
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-html-1.desktop << EOF
 [Desktop Entry]
 Name="%{bookname} Tome 1 HTML
@@ -353,35 +248,6 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=X-MandrivaLinux-MoreApplications-Documentation;
-EOF
-
-# Menu en
-install -d -m 755 $RPM_BUILD_ROOT%{_menudir}
-cat >$RPM_BUILD_ROOT%{_menudir}/%{name}-ps-en <<EOF
-?package(%{name}):\
-command="gv %{_datadir}/%name/i18n/en/patriarche-1.1.ps"\
-title="%{bookname} Tome 1 postscript"\
-longtitle="%{bookname} Tome 1 The First World: In the search of a God"\
-needs="x11"\
-section="Documentation/%name"\
-icon="documentation_section.png"\
-xdg="true"
-?package(%{name}):\
-command="gv %{_datadir}/%name/i18n/en/patriarche-1.2.ps"\
-title="%{bookname} Tome 2 postscript"\
-longtitle="%{bookname} Tome 2 The First World: Good"\
-needs="x11"\
-section="Documentation/%name"\
-icon="documentation_section.png"\
-xdg="true"
-?package(%{name}):\
-command="gv %{_datadir}/%name/i18n/en/patriarche-1.3.ps"\
-title="%{bookname} Tome 3 postscript"\
-longtitle="%{bookname} Tome 3 The First World: Crisis"\
-needs="x11"\
-section="Documentation/%name"\
-icon="documentation_section.png"\
-xdg="true"
 EOF
 
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-ps-1-en.desktop << EOF
@@ -432,33 +298,6 @@ StartupNotify=true
 Categories=X-MandrivaLinux-MoreApplications-Documentation;
 EOF
 
-cat >$RPM_BUILD_ROOT%{_menudir}/%{name}-pdf-en <<EOF
-?package(%{name}):\
-command="xpdf %{_datadir}/%name/i18n/en/patriarche-1.1.pdf"\
-title="%{bookname} Tome 1 PDF"\
-longtitle="%{bookname} Tome 1 The First World: In the search of a God"\
-needs="x11"\
-section="Documentation/%name"\
-icon="documentation_section.png"\
-xdg="true"
-?package(%{name}):\
-command="gv %{_datadir}/%name/i18n/en/patriarche-1.2.pdf"\
-title="%{bookname} Tome 2 PDF"\
-longtitle="%{bookname} Tome 2 The First World: Good"\
-needs="x11"\
-section="Documentation/%name"\
-icon="documentation_section.png"\
-xdg="true"
-?package(%{name}):\
-command="gv %{_datadir}/%name/i18n/en/patriarche-1.3.pdf"\
-title="%{bookname} Tome 3 PDF"\
-longtitle="%{bookname} Tome 3 The First World: Crisis"\
-needs="x11"\
-section="Documentation/%name"\
-icon="documentation_section.png"\
-xdg="true"
-EOF
-
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-pdf-1-en.desktop << EOF
 [Desktop Entry]
 Name="%{bookname} Tome 1 PDF
@@ -505,41 +344,6 @@ Terminal=false
 Type=Application
 StartupNotify=true
 Categories=X-MandrivaLinux-MoreApplications-Documentation;
-EOF
-
-cat >$RPM_BUILD_ROOT%{_menudir}/%{name}-html-en <<EOF
-?package(%{name}):\
-command="$BROWSER %{_datadir}/%name/i18n/en/index.html"\
-title="%{bookname}"\
-longtitle="%{bookname}, The book of Ylraw"\
-needs="x11"\
-section="Documentation/%name"\
-icon="documentation_section.png"\
-xdg="true"
-?package(%{name}):\
-command="$BROWSER %{_datadir}/%name/i18n/en/html-1.1/index.html"\
-title="%{bookname} Tome 1 HTML"\
-longtitle="%{bookname} Tome 1 The First World: In the search of a God"\
-needs="x11"\
-section="Documentation/%name"\
-icon="documentation_section.png"\
-xdg="true"
-?package(%{name}):\
-command="$BROWSER %{_datadir}/%name/i18n/en/html-1.2/index.html"\
-title="%{bookname} Tome 2 HTML"\
-longtitle="%{bookname} Tome 2 The First World: Good"\
-needs="x11"\
-section="Documentation/%name"\
-icon="documentation_section.png"\
-xdg="true"
-?package(%{name}):\
-command="$BROWSER %{_datadir}/%name/i18n/en/html-1.3/index.html"\
-title="%{bookname} Tome 3 HTML"\
-longtitle="%{bookname} Tome 3 The First World: Crisis"\
-needs="x11"\
-section="Documentation/%name"\
-icon="documentation_section.png"\
-xdg="true"
 EOF
 
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-html-1-en.desktop << EOF
@@ -634,13 +438,11 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %{_datadir}/applications/mandriva-%{name}-ps-?.desktop
 %{_datadir}/patriarche/A4-patriarche-*.ps
-%{_menudir}/%{name}-ps
 
 %files pdf
 %defattr(-,root,root)
 %{_datadir}/applications/mandriva-%{name}-pdf-?.desktop
 %{_datadir}/patriarche/A4-patriarche-*.pdf
-%{_menudir}/%{name}-pdf
 
 %files html
 %defattr(-,root,root)
@@ -651,7 +453,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/patriarche/html-1.3/
 %{_datadir}/patriarche/html-2.1/
 %{_datadir}/patriarche/index.html
-%{_menudir}/%{name}-html
 
 %files txt
 %defattr(-,root,root)
@@ -676,13 +477,11 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root)
 %{_datadir}/applications/mandriva-%{name}-ps-?-en.desktop
 %{_datadir}/patriarche/i18n/en/A4-patriarche-*.ps
-%{_menudir}/%{name}-ps-en
 
 %files pdf-en
 %defattr(-,root,root)
 %{_datadir}/applications/mandriva-%{name}-pdf-?-en.desktop
 %{_datadir}/patriarche/i18n/en/A4-patriarche-*.pdf
-%{_menudir}/%{name}-pdf-en
 
 %files html-en
 %defattr(-,root,root)
@@ -692,7 +491,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/patriarche/i18n/en/html-1.3-en/
 %{_datadir}/patriarche/i18n/en/html-2.1-en/
 %{_datadir}/patriarche/i18n/en/index.html
-%{_menudir}/%{name}-html-en
 %{_datadir}/applications/mandriva-%{name}-html-?-en.desktop
 
 %files txt-en
