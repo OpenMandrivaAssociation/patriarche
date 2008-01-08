@@ -110,7 +110,7 @@ install -d -m 755 $RPM_BUILD_ROOT%{_datadir}/applications
 
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-ps-1.desktop << EOF
 [Desktop Entry]
-Name="%{bookname} Tome 1 postscript
+Name=%{bookname} Tome 1 postscript
 Comment=%{bookname} Tome 1 Le Premier Monde - À la recherche d'un Dieu
 Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.1.ps
 Icon=documentation_section
@@ -122,7 +122,7 @@ EOF
 
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-ps-2.desktop << EOF
 [Desktop Entry]
-Name="%{bookname} Tome 2 postscript
+Name=%{bookname} Tome 2 postscript
 Comment=%{bookname} Tome 2 Le Premier Monde - Le bien
 Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.2.ps
 Icon=documentation_section
@@ -134,7 +134,7 @@ EOF
 
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-ps-3.desktop << EOF
 [Desktop Entry]
-Name="%{bookname} Tome 3 postscript
+Name=%{bookname} Tome 3 postscript
 Comment=%{bookname} Tome 3 Le Premier Monde - Crise
 Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.3.ps
 Icon=documentation_section
@@ -146,7 +146,7 @@ EOF
 
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-ps-4.desktop << EOF
 [Desktop Entry]
-Name="%{bookname} Tome 4 postscript
+Name=%{bookname} Tome 4 postscript
 Comment=%{bookname} Tome 4 Le Premier Monde - Ménocha
 Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.4.ps
 Icon=documentation_section
@@ -158,7 +158,7 @@ EOF
 
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-pdf-1.desktop << EOF
 [Desktop Entry]
-Name="%{bookname} Tome 1 PDF
+Name=%{bookname} Tome 1 PDF
 Comment=%{bookname} Tome 1 Le Premier Monde - À la recherche d'un Dieu
 Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.1.pdf
 Icon=documentation_section
@@ -170,7 +170,7 @@ EOF
 
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-pdf-2.desktop << EOF
 [Desktop Entry]
-Name="%{bookname} Tome 2 PDF
+Name=%{bookname} Tome 2 PDF
 Comment=%{bookname} Tome 2 Le Premier Monde - Le bien
 Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.2.pdf
 Icon=documentation_section
@@ -182,7 +182,7 @@ EOF
 
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-pdf-3.desktop << EOF
 [Desktop Entry]
-Name="%{bookname} Tome 3 PDF
+Name=%{bookname} Tome 3 PDF
 Comment=%{bookname} Tome 3 Le Premier Monde - Crise
 Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.3.pdf
 Icon=documentation_section
@@ -194,7 +194,7 @@ EOF
 
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-pdf-4.desktop << EOF
 [Desktop Entry]
-Name="%{bookname} Tome 4 PDF
+Name=%{bookname} Tome 4 PDF
 Comment=%{bookname} Tome 4 Le Premier Monde - Ménocha
 Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.4.pdf
 Icon=documentation_section
@@ -206,7 +206,7 @@ EOF
 
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-html-1.desktop << EOF
 [Desktop Entry]
-Name="%{bookname} Tome 1 HTML
+Name=%{bookname} Tome 1 HTML
 Comment=%{bookname} Tome 1 Le Premier Monde - À la recherche d'un Dieu
 Exec=www-browser %{_datadir}/%name/A4-patriarche-1.1.html
 Icon=documentation_section
@@ -218,7 +218,7 @@ EOF
 
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-html-2.desktop << EOF
 [Desktop Entry]
-Name="%{bookname} Tome 2 HTML
+Name=%{bookname} Tome 2 HTML
 Comment=%{bookname} Tome 2 Le Premier Monde - Le bien
 Exec=www-browser %{_datadir}/%name/A4-patriarche-1.2.html
 Icon=documentation_section
@@ -230,7 +230,7 @@ EOF
 
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-html-3.desktop << EOF
 [Desktop Entry]
-Name="%{bookname} Tome 3 HTML
+Name=%{bookname} Tome 3 HTML
 Comment=%{bookname} Tome 3 Le Premier Monde - Crise
 Exec=www-browser %{_datadir}/%name/A4-patriarche-1.3.html
 Icon=documentation_section
@@ -242,7 +242,7 @@ EOF
 
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-html-4.desktop << EOF
 [Desktop Entry]
-Name="%{bookname} Tome 4 HTML
+Name=%{bookname} Tome 4 HTML
 Comment=%{bookname} Tome 4 Le Premier Monde - Ménocha
 Exec=www-browser %{_datadir}/%name/A4-patriarche-1.4.html
 Icon=documentation_section
@@ -254,7 +254,7 @@ EOF
 
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-ps-1-en.desktop << EOF
 [Desktop Entry]
-Name="%{bookname} Tome 1 postscript
+Name=%{bookname} Tome 1 postscript
 Comment=%{bookname} Tome 1 The First World: In the search of a God
 Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.1.ps
 Icon=documentation_section
@@ -266,7 +266,7 @@ EOF
 
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-ps-2-en.desktop << EOF
 [Desktop Entry]
-Name="%{bookname} Tome 2 postscript
+Name=%{bookname} Tome 2 postscript
 Comment=%{bookname} Tome 2 The First World: Good
 Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.2.ps
 Icon=documentation_section
@@ -278,7 +278,7 @@ EOF
 
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-ps-3-en.desktop << EOF
 [Desktop Entry]
-Name="%{bookname} Tome 3 postscript
+Name=%{bookname} Tome 3 postscript
 Comment=%{bookname} Tome 3 The First World: Crisis
 Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.3.ps
 Icon=documentation_section
@@ -290,7 +290,7 @@ EOF
 
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-ps-4-en.desktop << EOF
 [Desktop Entry]
-Name="%{bookname} Tome 4 postscript
+Name=%{bookname} Tome 4 postscript
 Comment=%{bookname} Tome 4 The First World - Ménocha
 Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.4.ps
 Icon=documentation_section
@@ -302,7 +302,7 @@ EOF
 
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-pdf-1-en.desktop << EOF
 [Desktop Entry]
-Name="%{bookname} Tome 1 PDF
+Name=%{bookname} Tome 1 PDF
 Comment=%{bookname} Tome 1 The First World: In the search of a God
 Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.1.pdf
 Icon=documentation_section
@@ -314,7 +314,7 @@ EOF
 
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-pdf-2-en.desktop << EOF
 [Desktop Entry]
-Name="%{bookname} Tome 2 PDF
+Name=%{bookname} Tome 2 PDF
 Comment=%{bookname} Tome 2 The First World: Good
 Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.2.pdf
 Icon=documentation_section
@@ -326,7 +326,7 @@ EOF
 
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-pdf-3-en.desktop << EOF
 [Desktop Entry]
-Name="%{bookname} Tome 3 PDF
+Name=%{bookname} Tome 3 PDF
 Comment=%{bookname} Tome 3 The First World: Crisis
 Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.3.pdf
 Icon=documentation_section
@@ -338,7 +338,7 @@ EOF
 
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-pdf-4-en.desktop << EOF
 [Desktop Entry]
-Name="%{bookname} Tome 4 PDF
+Name=%{bookname} Tome 4 PDF
 Comment=%{bookname} Tome 4 The First World - Ménocha
 Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.4.pdf
 Icon=documentation_section
@@ -350,7 +350,7 @@ EOF
 
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-html-1-en.desktop << EOF
 [Desktop Entry]
-Name="%{bookname} Tome 1 HTML
+Name=%{bookname} Tome 1 HTML
 Comment=%{bookname} Tome 1 The First World: In the search of a God
 Exec=www-browser %{_datadir}/%name/A4-patriarche-1.1.html
 Icon=documentation_section
@@ -362,7 +362,7 @@ EOF
 
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-html-2-en.desktop << EOF
 [Desktop Entry]
-Name="%{bookname} Tome 2 HTML
+Name=%{bookname} Tome 2 HTML
 Comment=%{bookname} Tome 2 The First World: Good
 Exec=www-browser %{_datadir}/%name/A4-patriarche-1.2.html
 Icon=documentation_section
@@ -374,7 +374,7 @@ EOF
 
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-html-3-en.desktop << EOF
 [Desktop Entry]
-Name="%{bookname} Tome 3 HTML
+Name=%{bookname} Tome 3 HTML
 Comment=%{bookname} Tome 3 The First World: Crisis
 Exec=www-browser %{_datadir}/%name/A4-patriarche-1.3.html
 Icon=documentation_section
@@ -386,7 +386,7 @@ EOF
 
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-html-4-en.desktop << EOF
 [Desktop Entry]
-Name="%{bookname} Tome 4 HTML
+Name=%{bookname} Tome 4 HTML
 Comment=%{bookname} Tome 4 The First World - Ménocha
 Exec=www-browser %{_datadir}/%name/A4-patriarche-1.4.html
 Icon=documentation_section
