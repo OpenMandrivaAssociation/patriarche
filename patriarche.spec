@@ -208,7 +208,7 @@ cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-html-1.desktop <<
 [Desktop Entry]
 Name="%{bookname} Tome 1 HTML
 Comment=%{bookname} Tome 1 Le Premier Monde - À la recherche d'un Dieu
-Exec=$BROWSER %{_datadir}/%name/A4-patriarche-1.1.html
+Exec=www-browser %{_datadir}/%name/A4-patriarche-1.1.html
 Icon=documentation_section
 Terminal=false
 Type=Application
@@ -220,7 +220,7 @@ cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-html-2.desktop <<
 [Desktop Entry]
 Name="%{bookname} Tome 2 HTML
 Comment=%{bookname} Tome 2 Le Premier Monde - Le bien
-Exec=$BROWSER %{_datadir}/%name/A4-patriarche-1.2.html
+Exec=www-browser %{_datadir}/%name/A4-patriarche-1.2.html
 Icon=documentation_section
 Terminal=false
 Type=Application
@@ -232,7 +232,7 @@ cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-html-3.desktop <<
 [Desktop Entry]
 Name="%{bookname} Tome 3 HTML
 Comment=%{bookname} Tome 3 Le Premier Monde - Crise
-Exec=$BROWSER %{_datadir}/%name/A4-patriarche-1.3.html
+Exec=www-browser %{_datadir}/%name/A4-patriarche-1.3.html
 Icon=documentation_section
 Terminal=false
 Type=Application
@@ -244,7 +244,7 @@ cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-html-4.desktop <<
 [Desktop Entry]
 Name="%{bookname} Tome 4 HTML
 Comment=%{bookname} Tome 4 Le Premier Monde - Ménocha
-Exec=$BROWSER %{_datadir}/%name/A4-patriarche-1.4.html
+Exec=www-browser %{_datadir}/%name/A4-patriarche-1.4.html
 Icon=documentation_section
 Terminal=false
 Type=Application
@@ -352,7 +352,7 @@ cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-html-1-en.desktop
 [Desktop Entry]
 Name="%{bookname} Tome 1 HTML
 Comment=%{bookname} Tome 1 The First World: In the search of a God
-Exec=$BROWSER %{_datadir}/%name/A4-patriarche-1.1.html
+Exec=www-browser %{_datadir}/%name/A4-patriarche-1.1.html
 Icon=documentation_section
 Terminal=false
 Type=Application
@@ -364,7 +364,7 @@ cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-html-2-en.desktop
 [Desktop Entry]
 Name="%{bookname} Tome 2 HTML
 Comment=%{bookname} Tome 2 The First World: Good
-Exec=$BROWSER %{_datadir}/%name/A4-patriarche-1.2.html
+Exec=www-browser %{_datadir}/%name/A4-patriarche-1.2.html
 Icon=documentation_section
 Terminal=false
 Type=Application
@@ -376,7 +376,7 @@ cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-html-3-en.desktop
 [Desktop Entry]
 Name="%{bookname} Tome 3 HTML
 Comment=%{bookname} Tome 3 The First World: Crisis
-Exec=$BROWSER %{_datadir}/%name/A4-patriarche-1.3.html
+Exec=www-browser %{_datadir}/%name/A4-patriarche-1.3.html
 Icon=documentation_section
 Terminal=false
 Type=Application
@@ -388,7 +388,7 @@ cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-html-4-en.desktop
 [Desktop Entry]
 Name="%{bookname} Tome 4 HTML
 Comment=%{bookname} Tome 4 The First World - Ménocha
-Exec=$BROWSER %{_datadir}/%name/A4-patriarche-1.4.html
+Exec=www-browser %{_datadir}/%name/A4-patriarche-1.4.html
 Icon=documentation_section
 Terminal=false
 Type=Application
