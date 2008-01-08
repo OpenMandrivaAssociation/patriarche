@@ -16,6 +16,7 @@ Group: Books/Literature
 BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildArch: noarch
 BuildRequires: libxslt-proc gimp >= 1:2.4.0 gimp < 1:2.5.0 tetex-dvipdfm = 3.0-40mdv2008.1 tetex-latex = 3.0-40mdv2008.1
+BuildConflicts: texlive texlive-fonts texlive-texmf-dvipdfm texlive-dvipdfm texlive-texmf-fonts texlive-texmf-dvips texlive-texmf-common texlive-texmf texlive-texmf-latex texlive-latex
 
 %description
 Le Patriarche postscript versions
