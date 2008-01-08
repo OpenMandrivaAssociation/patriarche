@@ -112,7 +112,7 @@ cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-ps-1.desktop << E
 [Desktop Entry]
 Name="%{bookname} Tome 1 postscript
 Comment=%{bookname} Tome 1 Le Premier Monde - À la recherche d'un Dieu
-Exec=gv %{_datadir}/%name/A4-patriarche-1.1.ps
+Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.1.ps
 Icon=documentation_section
 Terminal=false
 Type=Application
@@ -124,7 +124,7 @@ cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-ps-2.desktop << E
 [Desktop Entry]
 Name="%{bookname} Tome 2 postscript
 Comment=%{bookname} Tome 2 Le Premier Monde - Le bien
-Exec=gv %{_datadir}/%name/A4-patriarche-1.2.ps
+Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.2.ps
 Icon=documentation_section
 Terminal=false
 Type=Application
@@ -136,7 +136,7 @@ cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-ps-3.desktop << E
 [Desktop Entry]
 Name="%{bookname} Tome 3 postscript
 Comment=%{bookname} Tome 3 Le Premier Monde - Crise
-Exec=gv %{_datadir}/%name/A4-patriarche-1.3.ps
+Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.3.ps
 Icon=documentation_section
 Terminal=false
 Type=Application
@@ -148,7 +148,7 @@ cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-ps-4.desktop << E
 [Desktop Entry]
 Name="%{bookname} Tome 4 postscript
 Comment=%{bookname} Tome 4 Le Premier Monde - Ménocha
-Exec=gv %{_datadir}/%name/A4-patriarche-1.4.ps
+Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.4.ps
 Icon=documentation_section
 Terminal=false
 Type=Application
@@ -160,7 +160,7 @@ cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-pdf-1.desktop << 
 [Desktop Entry]
 Name="%{bookname} Tome 1 PDF
 Comment=%{bookname} Tome 1 Le Premier Monde - À la recherche d'un Dieu
-Exec=gv %{_datadir}/%name/A4-patriarche-1.1.pdf
+Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.1.pdf
 Icon=documentation_section
 Terminal=false
 Type=Application
@@ -172,7 +172,7 @@ cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-pdf-2.desktop << 
 [Desktop Entry]
 Name="%{bookname} Tome 2 PDF
 Comment=%{bookname} Tome 2 Le Premier Monde - Le bien
-Exec=gv %{_datadir}/%name/A4-patriarche-1.2.pdf
+Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.2.pdf
 Icon=documentation_section
 Terminal=false
 Type=Application
@@ -184,7 +184,7 @@ cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-pdf-3.desktop << 
 [Desktop Entry]
 Name="%{bookname} Tome 3 PDF
 Comment=%{bookname} Tome 3 Le Premier Monde - Crise
-Exec=gv %{_datadir}/%name/A4-patriarche-1.3.pdf
+Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.3.pdf
 Icon=documentation_section
 Terminal=false
 Type=Application
@@ -196,7 +196,7 @@ cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-pdf-4.desktop << 
 [Desktop Entry]
 Name="%{bookname} Tome 4 PDF
 Comment=%{bookname} Tome 4 Le Premier Monde - Ménocha
-Exec=gv %{_datadir}/%name/A4-patriarche-1.4.pdf
+Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.4.pdf
 Icon=documentation_section
 Terminal=false
 Type=Application
@@ -256,7 +256,7 @@ cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-ps-1-en.desktop <
 [Desktop Entry]
 Name="%{bookname} Tome 1 postscript
 Comment=%{bookname} Tome 1 The First World: In the search of a God
-Exec=gv %{_datadir}/%name/A4-patriarche-1.1.ps
+Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.1.ps
 Icon=documentation_section
 Terminal=false
 Type=Application
@@ -268,7 +268,7 @@ cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-ps-2-en.desktop <
 [Desktop Entry]
 Name="%{bookname} Tome 2 postscript
 Comment=%{bookname} Tome 2 The First World: Good
-Exec=gv %{_datadir}/%name/A4-patriarche-1.2.ps
+Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.2.ps
 Icon=documentation_section
 Terminal=false
 Type=Application
@@ -280,7 +280,7 @@ cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-ps-3-en.desktop <
 [Desktop Entry]
 Name="%{bookname} Tome 3 postscript
 Comment=%{bookname} Tome 3 The First World: Crisis
-Exec=gv %{_datadir}/%name/A4-patriarche-1.3.ps
+Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.3.ps
 Icon=documentation_section
 Terminal=false
 Type=Application
@@ -292,7 +292,7 @@ cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-ps-4-en.desktop <
 [Desktop Entry]
 Name="%{bookname} Tome 4 postscript
 Comment=%{bookname} Tome 4 The First World - Ménocha
-Exec=gv %{_datadir}/%name/A4-patriarche-1.4.ps
+Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.4.ps
 Icon=documentation_section
 Terminal=false
 Type=Application
@@ -304,7 +304,7 @@ cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-pdf-1-en.desktop 
 [Desktop Entry]
 Name="%{bookname} Tome 1 PDF
 Comment=%{bookname} Tome 1 The First World: In the search of a God
-Exec=gv %{_datadir}/%name/A4-patriarche-1.1.pdf
+Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.1.pdf
 Icon=documentation_section
 Terminal=false
 Type=Application
@@ -316,7 +316,7 @@ cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-pdf-2-en.desktop 
 [Desktop Entry]
 Name="%{bookname} Tome 2 PDF
 Comment=%{bookname} Tome 2 The First World: Good
-Exec=gv %{_datadir}/%name/A4-patriarche-1.2.pdf
+Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.2.pdf
 Icon=documentation_section
 Terminal=false
 Type=Application
@@ -328,7 +328,7 @@ cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-pdf-3-en.desktop 
 [Desktop Entry]
 Name="%{bookname} Tome 3 PDF
 Comment=%{bookname} Tome 3 The First World: Crisis
-Exec=gv %{_datadir}/%name/A4-patriarche-1.3.pdf
+Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.3.pdf
 Icon=documentation_section
 Terminal=false
 Type=Application
@@ -340,7 +340,7 @@ cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-pdf-4-en.desktop 
 [Desktop Entry]
 Name="%{bookname} Tome 4 PDF
 Comment=%{bookname} Tome 4 The First World - Ménocha
-Exec=gv %{_datadir}/%name/A4-patriarche-1.4.pdf
+Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.4.pdf
 Icon=documentation_section
 Terminal=false
 Type=Application
