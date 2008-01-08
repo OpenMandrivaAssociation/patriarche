@@ -15,7 +15,7 @@ Patch: patriarche-0.2.8-use-gimp24.patch
 Group: Books/Literature
 BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildArch: noarch
-BuildRequires: libxslt-proc tetex gimp >= 1:2.4.0 gimp < 1:2.5.0 tetex-dvipdfm tetex-latex
+BuildRequires: libxslt-proc gimp >= 1:2.4.0 gimp < 1:2.5.0 tetex-dvipdfm = 3.0-40mdv2008.1 tetex-latex = 3.0-40mdv2008.1
 
 %description
 Le Patriarche postscript versions
