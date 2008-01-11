@@ -12,6 +12,8 @@ Epoch: 1
 url: http://perso.wanadoo.fr/warly/files/patriarche
 Source: %name-%version.tar.bz2
 Patch: patriarche-0.2.8-use-gimp24.patch
+Patch1: patriarche-fix-bz2-images.patch
+
 Group: Books/Literature
 BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildArch: noarch
@@ -95,6 +97,9 @@ Tools needed to construct patriarche-like book.
 %prep
 %setup -q
 %patch -p0
+%patch1 -p0
+bunzip2 img/*.bz2
+gunzip  img/*.gz
 
 %build
 
