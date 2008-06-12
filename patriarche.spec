@@ -401,41 +401,65 @@ StartupNotify=true
 Categories=X-MandrivaLinux-MoreApplications-Documentation;
 EOF
 
+%if %mdkversion < 200900
 %post
 %{update_menus}
+%endif
 
+%if %mdkversion < 200900
 %postun
 %{clean_menus}
+%endif
 
+%if %mdkversion < 200900
 %post pdf
 %{update_menus}
+%endif
 
+%if %mdkversion < 200900
 %postun pdf
 %{clean_menus}
+%endif
 
+%if %mdkversion < 200900
 %post html
 %{update_menus}
+%endif
 
+%if %mdkversion < 200900
 %postun html
 %{clean_menus}
+%endif
 
+%if %mdkversion < 200900
 %post en
 %{update_menus}
+%endif
 
+%if %mdkversion < 200900
 %postun en
 %{clean_menus}
+%endif
 
+%if %mdkversion < 200900
 %post pdf-en
 %{update_menus}
+%endif
 
+%if %mdkversion < 200900
 %postun pdf-en
 %{clean_menus}
+%endif
 
+%if %mdkversion < 200900
 %post html-en
 %{update_menus}
+%endif
 
+%if %mdkversion < 200900
 %postun html-en
 %{clean_menus}
+%endif
 
 
 %clean
