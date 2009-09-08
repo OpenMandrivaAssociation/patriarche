@@ -11,13 +11,14 @@ License: GPL
 Epoch: 1
 url: http://perso.wanadoo.fr/warly/files/patriarche
 Source: %name-%version.tar.bz2
-Patch: patriarche-0.2.8-use-gimp24.patch
+Patch: patriarche-0.2.8-use-gimp26.patch
 Patch1: patriarche-fix-bz2-images.patch
 
 Group: Books/Literature
 BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildArch: noarch
-BuildRequires: libxslt-proc gimp >= 1:2.4.0 gimp < 1:2.5.0 tetex-dvipdfm tetex-latex
+BuildRequires: libxslt-proc gimp tetex-dvipdfm tetex-latex
+BuildRequires:  x11-server-xvfb
 
 %description
 Le Patriarche postscript versions
@@ -101,9 +102,12 @@ bunzip2 img/*.bz2
 gunzip  img/*.gz
 
 %build
-
-export GIMP2_DIRECTORY=$RPM_BUILD_DIR/%{name}-%{version}/gimp-2.3
+XDISPLAY=$(i=1; while [ -f /tmp/.X$i-lock ]; do i=$(($i+1)); done; echo $i)
+%{_bindir}/Xvfb :$XDISPLAY &
+export DISPLAY=:$XDISPLAY
+export GIMP2_DIRECTORY=$RPM_BUILD_DIR/%{name}-%{version}/gimp-2.6
 make
+kill $(cat /tmp/.X$XDISPLAY-lock) ||:
 
 %install
 rm -rf $RPM_BUILD_ROOT
