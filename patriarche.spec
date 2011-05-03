@@ -1,6 +1,6 @@
 %define name patriarche
 %define version 0.2.8
-%define release %mkrel 11
+%define release %mkrel 12
 %define bookname Le Patriarche
 
 Summary: The true story of Ylraw
