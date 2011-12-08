@@ -105,7 +105,7 @@ gunzip  img/*.gz
 XDISPLAY=$(i=1; while [ -f /tmp/.X$i-lock ]; do i=$(($i+1)); done; echo $i)
 %{_bindir}/Xvfb :$XDISPLAY &
 export DISPLAY=:$XDISPLAY
-export GIMP2_DIRECTORY=$RPM_BUILD_DIR/%{name}-%{version}/gimp-2.6
+export GIMP2_DIRECTORY=%{_builddir}/%{name}-%{version}/gimp-2.6
 make
 kill $(cat /tmp/.X$XDISPLAY-lock) ||:
 
