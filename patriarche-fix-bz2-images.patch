@@ -1,0 +1,11 @@
+diff -p -up ./update_img.tv ./update_img
+--- ./update_img.tv	2008-01-09 13:17:55.000000000 +0100
++++ ./update_img	2008-01-09 13:18:06.000000000 +0100
+@@ -56,7 +56,6 @@ while (my $i = readdir $dir) {
+       print "converting $i\n";
+       print(qq|gimp-console --console-messages -i -d -b "(gimp-resize-to-patriarche .5 254 180 \\"$img/$i\\" \\"$filename.png\\" \\"$filename.ps\\" \\"${filename}_2.ps\\")" -b "(gimp-quit 1)"|);
+       system(qq|gimp-console --console-messages -i -d -b "(gimp-resize-to-patriarche .5 254 180 \\"$img/$i\\" \\"$filename.png\\" \\"$filename.ps\\" \\"${filename}_2.ps\\")" -b "(gimp-quit 1)"|);
+-      system('bzip2', "-f", "$img/$i");
+       system(qq|gimp-console --console-messages -i -d -b "(gimp-resize-to-patriarche .5 254 180 \\"$img/$i\\" \\"$filename.png\\" \\"$filename.ps\\" \\"${filename}_2.ps\\")" -b "(gimp-quit 1)"|);
+   }
+   $filename =~ s/(.*)\///;

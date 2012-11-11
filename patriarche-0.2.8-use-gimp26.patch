@@ -1,0 +1,16 @@
+--- update_img.orig	2007-08-24 03:30:25.000000000 +0800
++++ update_img	2007-08-24 03:30:49.000000000 +0800
+@@ -54,10 +54,10 @@
+   my ($filename) = $file =~ /(.*)\.xcf/;
+   if (! -f "$filename.png" || (stat "$filename.png")[9] < (stat "$img/$i")[9]) {
+       print "converting $i\n";
+-      print(qq|gimp-2.3 --console-messages -i -d -b "(gimp-resize-to-patriarche .5 254 180 \\"$img/$i\\" \\"$filename.png\\" \\"$filename.ps\\" \\"${filename}_2.ps\\")" -b "(gimp-quit 1)"|);
+-      system(qq|gimp-2.3 --console-messages -i -d -b "(gimp-resize-to-patriarche .5 254 180 \\"$img/$i\\" \\"$filename.png\\" \\"$filename.ps\\" \\"${filename}_2.ps\\")" -b "(gimp-quit 1)"|);
++      print(qq|gimp-console --console-messages -i -d -b "(gimp-resize-to-patriarche .5 254 180 \\"$img/$i\\" \\"$filename.png\\" \\"$filename.ps\\" \\"${filename}_2.ps\\")" -b "(gimp-quit 1)"|);
++      system(qq|gimp-console --console-messages -i -d -b "(gimp-resize-to-patriarche .5 254 180 \\"$img/$i\\" \\"$filename.png\\" \\"$filename.ps\\" \\"${filename}_2.ps\\")" -b "(gimp-quit 1)"|);
+       system('bzip2', "-f", "$img/$i");
+-      system(qq|gimp-2.3 --console-messages -i -d -b "(gimp-resize-to-patriarche .5 254 180 \\"$img/$i\\" \\"$filename.png\\" \\"$filename.ps\\" \\"${filename}_2.ps\\")" -b "(gimp-quit 1)"|);
++      system(qq|gimp-console --console-messages -i -d -b "(gimp-resize-to-patriarche .5 254 180 \\"$img/$i\\" \\"$filename.png\\" \\"$filename.ps\\" \\"${filename}_2.ps\\")" -b "(gimp-quit 1)"|);
+   }
+   $filename =~ s/(.*)\///;
+   if (!$done{$filename}) {
