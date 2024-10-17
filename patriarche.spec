@@ -9,7 +9,7 @@ Version: %version
 Release: %release
 License: GPL
 Epoch: 1
-url: http://perso.wanadoo.fr/warly/files/patriarche
+url: https://perso.wanadoo.fr/warly/files/patriarche
 Source: %name-%version.tar.bz2
 Patch: patriarche-0.2.8-use-gimp26.patch
 Patch1: patriarche-fix-bz2-images.patch
