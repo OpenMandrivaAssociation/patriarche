@@ -17,6 +17,7 @@ Patch1: patriarche-fix-bz2-images.patch
 Group: Books/Literature
 BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildArch: noarch
+BuildRequires:	make
 BuildRequires: libxslt-proc gimp tetex-dvipdfm tetex-latex
 BuildRequires:  x11-server-xvfb
 
