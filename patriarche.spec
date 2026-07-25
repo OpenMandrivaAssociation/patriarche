@@ -1,6 +1,6 @@
 %define name patriarche
 %define version 0.2.8
-%define release %mkrel 12
+%define release 13
 %define bookname Le Patriarche
 
 Summary: The true story of Ylraw
@@ -121,7 +121,7 @@ install -d -m 755 $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-ps-1.desktop << EOF
 [Desktop Entry]
 Name=%{bookname} Tome 1 postscript
-Comment=%{bookname} Tome 1 Le Premier Monde - À la recherche d'un Dieu
+Comment=%{bookname} Tome 1 Le Premier Monde - ï¿½ la recherche d'un Dieu
 Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.1.ps
 Icon=documentation_section
 Terminal=false
@@ -157,7 +157,7 @@ EOF
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-ps-4.desktop << EOF
 [Desktop Entry]
 Name=%{bookname} Tome 4 postscript
-Comment=%{bookname} Tome 4 Le Premier Monde - Ménocha
+Comment=%{bookname} Tome 4 Le Premier Monde - Mï¿½nocha
 Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.4.ps
 Icon=documentation_section
 Terminal=false
@@ -169,7 +169,7 @@ EOF
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-pdf-1.desktop << EOF
 [Desktop Entry]
 Name=%{bookname} Tome 1 PDF
-Comment=%{bookname} Tome 1 Le Premier Monde - À la recherche d'un Dieu
+Comment=%{bookname} Tome 1 Le Premier Monde - ï¿½ la recherche d'un Dieu
 Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.1.pdf
 Icon=documentation_section
 Terminal=false
@@ -205,7 +205,7 @@ EOF
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-pdf-4.desktop << EOF
 [Desktop Entry]
 Name=%{bookname} Tome 4 PDF
-Comment=%{bookname} Tome 4 Le Premier Monde - Ménocha
+Comment=%{bookname} Tome 4 Le Premier Monde - Mï¿½nocha
 Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.4.pdf
 Icon=documentation_section
 Terminal=false
@@ -217,7 +217,7 @@ EOF
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-html-1.desktop << EOF
 [Desktop Entry]
 Name=%{bookname} Tome 1 HTML
-Comment=%{bookname} Tome 1 Le Premier Monde - À la recherche d'un Dieu
+Comment=%{bookname} Tome 1 Le Premier Monde - ï¿½ la recherche d'un Dieu
 Exec=www-browser %{_datadir}/%name/i18n/en/html-1.1-en/index.html
 Icon=documentation_section
 Terminal=false
@@ -253,7 +253,7 @@ EOF
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-html-4.desktop << EOF
 [Desktop Entry]
 Name=%{bookname} Tome 4 HTML
-Comment=%{bookname} Tome 4 Le Premier Monde - Ménocha
+Comment=%{bookname} Tome 4 Le Premier Monde - Mï¿½nocha
 Exec=www-browser %{_datadir}/%name/i18n/en/html-1.4-en/index.html
 Icon=documentation_section
 Terminal=false
@@ -301,7 +301,7 @@ EOF
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-ps-4-en.desktop << EOF
 [Desktop Entry]
 Name=%{bookname} Tome 4 postscript
-Comment=%{bookname} Tome 4 The First World - Ménocha
+Comment=%{bookname} Tome 4 The First World - Mï¿½nocha
 Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.4.ps
 Icon=documentation_section
 Terminal=false
@@ -349,7 +349,7 @@ EOF
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-pdf-4-en.desktop << EOF
 [Desktop Entry]
 Name=%{bookname} Tome 4 PDF
-Comment=%{bookname} Tome 4 The First World - Ménocha
+Comment=%{bookname} Tome 4 The First World - Mï¿½nocha
 Exec=xdg-open %{_datadir}/%name/A4-patriarche-1.4.pdf
 Icon=documentation_section
 Terminal=false
@@ -397,7 +397,7 @@ EOF
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}-html-4-en.desktop << EOF
 [Desktop Entry]
 Name=%{bookname} Tome 4 HTML
-Comment=%{bookname} Tome 4 The First World - Ménocha
+Comment=%{bookname} Tome 4 The First World - Mï¿½nocha
 Exec=www-browser %{_datadir}/%name/i18n/en/html-1.4-en/index.html
 Icon=documentation_section
 Terminal=false
